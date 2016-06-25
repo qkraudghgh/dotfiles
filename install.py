@@ -14,7 +14,7 @@ tasks = {
         # VIM
         '~/.vimrc' : 'vim/vimrc',
         '~/.vim' : 'vim',
-				'~/.ideavimrc' : 'vim/ideavimrc',
+        '~/.ideavimrc' : 'vim/ideavimrc',
 
         # GIT
         '~/.gitconfig' : 'git/gitconfig',
