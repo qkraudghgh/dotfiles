@@ -76,3 +76,6 @@
 [submodule "vim/bundle/vim-javacomplete"]
 	path = vim/bundle/vim-javacomplete
 	url = https://github.com/artur-shaik/vim-javacomplete2.git
+[submodule "vim/bundle/vim-android"]
+	path = vim/bundle/vim-android
+	url = git@github.com:hsanson/vim-android.git

@@ -382,3 +382,8 @@ au FileType c map <F5> <ESC>:w<CR>:!gcc %<CR><CR>:!./a.out < input.txt<CR>
 imap <F2> <ESC>:w<CR>
 map <F3> <ESC>:!cat %\|pbcopy<CR>
 
+
+"" -- Android Settings
+let g:gradle_path = "/usr/local/bin/"
+let g:android_sdk_path = "/User/Realignist/android-sdk/"
+
