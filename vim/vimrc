@@ -29,8 +29,8 @@ if &term =~ '^screen'
 endif
 
 " EDITOR {{{ -----------------------------------------------
-set nu ru sc wrap ls=2 lz                " -- appearance
-set et bs=2 ts=2 sw=2 sts=2            " -- tabstop
+set nu ru sc wrap ls=4 lz                " -- appearance
+set et bs=2 ts=4 sw=4 sts=4            " -- tabstop
 set noai nosi hls is ic cf ws scs magic  " -- search
 set sol sel=inclusive mps+=<:>           " -- moving around
 set ut=10 uc=200                         " -- swap control
@@ -167,14 +167,14 @@ if has("autocmd")
     au!
 
     " filetype-specific configurations
-    au FileType python setl ts=2 sw=2 sts=2 noet
+    au FileType python setl ts=4 sw=4 sts=4 noet
     au FileType html setl ts=4 sw=4 sts=4 et
     au FileType php setl ts=4 sw=4 sts=4 et
     au FileType cpp setl ts=4 sw=4 sts=4 noet
     au FileType c setl ts=4 sw=4 sts=4 noet
     au Filetype text setl tw=80
     au FileType javascript,jsp setl cin
-    au FileType ruby setl ts=2 sw=2 sts=0 tw=0 et
+    au FileType ruby setl ts=4 sw=4 sts=0 tw=0 et
     au BufNewFile,BufRead *.phps,*.php3s setf php
 
     """""""""""""" frientrip convention

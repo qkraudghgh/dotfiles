@@ -1,49 +1,52 @@
 # vim: set ft=gitconfig:
 
 [include]
-	# include external gitconfig file (requires git 1.7.10+)
-	# typically, user.name and user.email is configured.
-	path = ~/.gitconfig_secret
+    # include external gitconfig file (requires git 1.7.10+)
+    # typically, user.name and user.email is configured.
+    path = ~/.gitconfig_secret
 
 [core]
-	excludesfile = ~/.gitignore
-	pager = less -F
+    excludesfile = ~/.gitignore
+    pager = less -F
 
 [alias]
-	history = log --graph --pretty=format:'%C(yellow)%h%Creset \
-		-%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' \
-		--abbrev-commit --date=short --date-order -n30
+    history = log --graph --pretty=format:'%C(yellow)%h%Creset \
+        -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' \
+        --abbrev-commit --date=short --date-order -n30
 
-	co = checkout
-	unstage = reset HEAD --
-	discard = checkout --
-	update-branch = branch -f --no-track
+    c = clone
+    pl = pull
+    ps = push
+    co = checkout
+    unstage = reset HEAD --
+    discard = checkout --
+    update-branch = branch -f --no-track
 
-	assume-unchanged = update-index --assume-unchanged
-	unassume-unchanged = update-index --no-assume-unchanged
-	list-assume-unchanged = !sh -c 'git ls-files -v | grep "^[a-z]" | sed "s/^..//"'
-	dt = difftool
+    assume-unchanged = update-index --assume-unchanged
+    unassume-unchanged = update-index --no-assume-unchanged
+    list-assume-unchanged = !sh -c 'git ls-files -v | grep "^[a-z]" | sed "s/^..//"'
+    dt = difftool
 
 [color]
-	status = auto
-	diff = auto
-	branch = auto
-	interactive = auto
-	ui = auto
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+    ui = auto
 
 [format]
-	pretty = fuller
+    pretty = fuller
 
 [user]
-	name = lucidash
-	email = lucidash@gmail.com
+    name = Haze Lee
+    email = hazelee@realignist.me
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [difftool]
-	prompt = false
+    prompt = false
 [mergetool "fugitive"]
-	cmd = vim -f -c \"Gdiff\" \"$MERGED\"
+    cmd = vim -f -c \"Gdiff\" \"$MERGED\"
 [merge]
-	tool = fugitive
+    tool = fugitive
