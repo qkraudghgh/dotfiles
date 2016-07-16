@@ -45,7 +45,10 @@ tasks = {
 
         # .config
         #	'~/.config/terminator' : 'config/terminator',
-        }
+
+		'~/.hyperterm.js': '.hyperterm.js'
+		
+		}
 
 ################# END OF FIXME #################
 
