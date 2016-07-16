@@ -21,7 +21,7 @@
     unstage = reset HEAD --
     discard = checkout --
     update-branch = branch -f --no-track
-    cmt = commit -a
+    cmt = commit -S -m
 
     assume-unchanged = update-index --assume-unchanged
     unassume-unchanged = update-index --no-assume-unchanged
@@ -40,7 +40,8 @@
 
 [user]
     name = Haze Lee
-    email = hazelee@realignist.me
+    email = hazelee@re.aligni.st
+	signingkey = 8A2F28A8
 [credential]
     helper = osxkeychain
 [diff]
@@ -51,3 +52,5 @@
     cmd = vim -f -c \"Gdiff\" \"$MERGED\"
 [merge]
     tool = fugitive
+[commit]
+	gpgsign = true
