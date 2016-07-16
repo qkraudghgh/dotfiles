@@ -21,3 +21,5 @@ for config_file ($HOME/.zsh/zsh.d/*.zsh) source $config_file
 #source $HOME/.LS_COLORS/ls_colors.zsh
 
 export ANDROID_HOME=/Users/Realignist/android-sdk
+
+alias ls="ls -al"
