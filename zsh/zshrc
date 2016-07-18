@@ -22,4 +22,6 @@ for config_file ($HOME/.zsh/zsh.d/*.zsh) source $config_file
 
 export ANDROID_HOME=/Users/Realignist/android-sdk
 
+alias vi="vim"
 alias ls="ls -al"
+eval $(thefuck --alias)
