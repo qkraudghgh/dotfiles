@@ -393,3 +393,7 @@ let g:SuperTabDefaultCompletionType = 'context'
 
 "" -- Markdown Settings
 let vim_markdown_preview_hotkey='<C-m>'
+"Added by android-vim:
+set tags+=/Users/Realignist/.vim/tags
+autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+let g:SuperTabDefaultCompletionType = 'context'
