@@ -78,7 +78,7 @@
 	url = https://github.com/artur-shaik/vim-javacomplete2.git
 [submodule "vim/bundle/vim-android"]
 	path = vim/bundle/vim-android
-	url = git@github.com:hsanson/vim-android.git
+	url = https://github.com/hsanson/vim-android.git
 [submodule "vim/bundle/vim-markdown-preview"]
 	path = vim/bundle/vim-markdown-preview
-	url = git@github.com:JamshedVesuna/vim-markdown-preview.git
+	url = https://github.com/JamshedVesuna/vim-markdown-preview.git
