@@ -21,7 +21,7 @@
     unstage = reset HEAD --
     discard = checkout --
     update-branch = branch -f --no-track
-    cmt = commit -S -m
+    cmt = commit -S -v
 
     assume-unchanged = update-index --assume-unchanged
     unassume-unchanged = update-index --no-assume-unchanged

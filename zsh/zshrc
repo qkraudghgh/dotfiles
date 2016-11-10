@@ -33,3 +33,5 @@ export NVM_DIR="/Users/Realignist/.nvm"
 
 alias staging="ssh -i ~/frip-server.pem ubuntu@ec2-52-78-3-3.ap-northeast-2.compute.amazonaws.com"
 alias staging_test="NODE_ENV=staging slc run"
+
+export GPG_TTY=$(tty)
