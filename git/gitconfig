@@ -54,3 +54,7 @@
     tool = fugitive
 [commit]
 	gpgsign = true
+[http "https://gopkg.in"]
+	followRedirects = true
+[gpg]
+	program = gpg1

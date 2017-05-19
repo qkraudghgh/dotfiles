@@ -26,12 +26,13 @@ alias vi="vim"
 alias ls="ls -al"
 eval $(thefuck --alias)
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
 
 export NVM_DIR="/Users/Realignist/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-alias staging="ssh -i ~/frip-server.pem ubuntu@ec2-52-78-3-3.ap-northeast-2.compute.amazonaws.com"
-alias staging_test="NODE_ENV=staging slc run"
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:/usr/local/opt/go/libexec/bin:/usr/local/opt/go/gopath/bin:$GOROOT/bin:/Users/Realignist/Workspace/bin
+export GOPATH=/usr/local/opt/go/gopath:/User/Realignist/Workspace
 
 export GPG_TTY=$(tty)
