@@ -52,8 +52,9 @@ set fencs=utf-8,cp949,cp932,euc-jp,shift-jis,big5,latin2,ucs2-le
 "set lcs+=tab:\|\ 
 "endif
 " }}} ------------------------------------------------------
-colorscheme desert256
+"olorscheme desert256
 "colorscheme xoria256
+colorscheme nord
 
 nnoremap <CR> :noh<CR>
 "" }}}}}}}}}}
@@ -397,3 +398,15 @@ let vim_markdown_preview_hotkey='<C-m>'
 set tags+=/Users/Realignist/.vim/tags
 autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 let g:SuperTabDefaultCompletionType = 'context'
+
+set laststatus=2
+let g:airline_powerline_fonts = 1 
+
+function! MyLineNumber()
+    return substitute(line('.'), '\d\@<=\(\(\d\{3\}\)\+\)$', ',&', 'g'). ' | '.
+                \    substitute(line('$'), '\d\@<=\(\(\d\{3\}\)\+\)$', ',&', 'g')
+endfunction
+
+call airline#parts#define('linenr', {'function': 'MyLineNumber', 'accents': 'bold'})
+
+let g:airline_section_z = airline#section#create(['%3p%%: ', 'linenr', ':%3v'])
