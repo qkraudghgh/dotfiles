@@ -1,11 +1,45 @@
 # own aliasing 
+alias hubot-ssh='gcloud compute --project "xd-hubot" ssh --zone "asia-east1-a" "instance-1"'
+
+# VirtualEnv ========================================= {{{
 #
-# ssh =========================================
+alias venv='virtualenv'
+#
+# # }}}
 
-alias slog="ssh bot.realignist.me"
 
-# nginx
-alias n="sudo nginx"
+# Tmux ========================================= {{{
+#
+# # create a new session with name
+alias tmuxnew='tmux new -s'
+# # list sessions
+alias tmuxl='tmux list-sessions'
+# # tmuxa <session> : attach to <session> (force 256color and detach others)
+alias tmuxa='tmux -2 attach-session -d -t'
+#
+# # }}}
 
-alias su="sudo su"
-alias ls="ls -l"
+
+
+# screen ========================================= {{{
+# 
+# # list sessions
+alias sls='screen -ls'
+# # create a new session with name 
+alias snew='screen -S'
+# # sdr <session> : attach to <session> and detach others
+alias sdr='screen -d -r'
+#
+# # }}}
+
+#tail -f to tailf
+alias tailf='tail -f'
+
+#others
+#alias jj='python manage.py'
+alias l='ls -G'
+
+
+
+
+#alias boj='python submit.py'

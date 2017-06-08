@@ -39,9 +39,9 @@
     pretty = fuller
 
 [user]
-    name = Haze Lee
-    email = hazelee@re.aligni.st
-	signingkey = 8A2F28A8
+    name = myoungho.pak
+    email = qkraudghgh@gmail.com
+	signingkey = 3D149B6E
 [credential]
     helper = osxkeychain
 [diff]
@@ -57,4 +57,4 @@
 [http "https://gopkg.in"]
 	followRedirects = true
 [gpg]
-	program = gpg1
+	program = /usr/local/bin/gpg
