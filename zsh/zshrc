@@ -65,3 +65,4 @@ compinit
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 zstyle ':completion:*' menu select
+source /Users/myoungho.pak/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
