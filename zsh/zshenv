@@ -92,3 +92,17 @@ export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python'
 # ensure that all new virtual environments are isolated from the system site-packages.
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 DEBIAN_PREVENT_KEYBOARD_CHANGES=yes
+
+
+# I can just run "up" to "cd ..", or I can run "up 6" to "cd ../../../../../.."
+function up {
+  if [[ "$#" < 1 ]] ; then
+    cd ..
+  else
+    CDSTR=""
+    for i in {1..$1} ; do
+      CDSTR="../$CDSTR"
+    done
+    cd $CDSTR
+  fi
+}
