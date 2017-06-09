@@ -12,6 +12,7 @@ Personal dotfiles for \*NIX systems.
 - [tmp](https://github.com/tmux-plugins/tpm)
 - [nord-tmux](https://github.com/arcticicestudio/nord-tmux)
 - [fzf](https://github.com/junegunn/fzf)
+- [zsh-sytax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 ### Clone and Install!
 
