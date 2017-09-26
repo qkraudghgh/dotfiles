@@ -48,12 +48,6 @@ fi
 eval `/usr/libexec/path_helper -s`
 eval "$(rbenv init -)"
 eval "$(fasd --init auto)"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/myoungho.pak/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/myoungho.pak/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/myoungho.pak/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/myoungho.pak/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _complete _ignored _approximate
@@ -66,3 +60,27 @@ compinit
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 zstyle ':completion:*' menu select
 source /Users/myoungho.pak/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Elixer version manager
+test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
+
+export API_SECRET_VALUE="Ajcdt7632y4rywefv"
+export SLACK_CLIENT_ID="193315155424.194788594150"
+export SLACK_CLIENT_SECRET="8b3c533f94734f38e26c199de410c62f"
+export DB_USERNAME="root"
+export DB_PASSWORD="1234"
+export GOOGLE_API_KEY="AIzaSyDaPW1vqyEsyZfCmszXr9_yuWZJh9UrWlw"
+export GOOGLE_MAP_API_KEY="AIzaSyAr7ve6s3CEVMlWqOZI2VdFGisIjpc0Wuk"
+export WEB_ENDPOINT="localhost:4200"
+export SLACK_BOT_TOKEN="xoxb-195349013857-jvgcdglKuLsWesilrj0TwVKZ"
+export SLACK_VERIFICATION_TOKEN="QdJx8e516ZWH5J72gAKlFeqy"
+export SLACK_BOT_ID="U5RA90DR7"
+export SLACK_BOT_CHANNEL_ID="C5PUW6WHG"
+
+export PGDATA=/usr/local/var/postgres
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/myoungho.pak/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/myoungho.pak/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/myoungho.pak/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/myoungho.pak/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

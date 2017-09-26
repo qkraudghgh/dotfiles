@@ -4,9 +4,14 @@ alias hubot-ssh='gcloud compute --project "xd-hubot" ssh --zone "asia-east1-a" "
 # VirtualEnv ========================================= {{{
 #
 alias venv='virtualenv'
+alias emacs='emacs -nw'
 #
 # # }}}
 
+# Plain Bagel server
+alias bagel-dev='ssh -i ~/pub/vr_dev.pem ubuntu@dev.skippy.ai'
+alias bagel-devko='ssh -i ~/pub/vr_dev.pem ubuntu@devko.skippy.ai'
+alias bagel-prod='ssh -i ~/pub/skippy_ca.pem ubuntu@us.skippy.ai'
 
 # Tmux ========================================= {{{
 #
