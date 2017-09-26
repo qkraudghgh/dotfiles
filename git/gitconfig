@@ -42,9 +42,6 @@
 [user]
     name = myoungho.pak
     email = qkraudghgh@gmail.com
-	signingkey = 3D149B6E
-[credential]
-    helper = osxkeychain
 [diff]
     tool = vimdiff
 [difftool]
@@ -53,9 +50,5 @@
     cmd = vim -f -c \"Gdiff\" \"$MERGED\"
 [merge]
     tool = fugitive
-[commit]
-	gpgsign = true
 [http "https://gopkg.in"]
 	followRedirects = true
-[gpg]
-	program = /usr/local/bin/gpg
