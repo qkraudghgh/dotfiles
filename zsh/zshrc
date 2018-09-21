@@ -23,38 +23,13 @@ for config_file ($HOME/.zsh/zsh.d/*.zsh) source $config_file
 
 #source $HOME/.LS_COLORS/ls_colors.zsh
 
-alias python="python3"
-
-# added by travis gem
-[ -f /Users/myoungho.pak/.travis/travis.sh ] && source /Users/myoungho.pak/.travis/travis.sh
+export PATH="$PATH:$HOME/.rvm/bin"
 
 export NVM_DIR="/Users/myoungho.pak/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-export GOPATH=/Users/myoungho.pak/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-alias fuck='TF_CMD=$(TF_ALIAS=fuck PYTHONIOENCODING=utf-8 TF_SHELL_ALIASES=$(alias) thefuck $(fc -ln -1 | tail -n 1)) && eval $TF_CMD && print -s $TF_CMD'
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
-
-# gpg-agent
-[ -f ~/.gpg-agent-info ] && source ~/.gpg-agent-info
-if [ -S "${GPG_AGENT_INFO%%:*}" ]; then  
-  export GPG_AGENT_INFO
-  export GPG_TTY=$(tty)
-else  
-  eval $( gpg-agent --daemon --write-env-file ~/.gpg-agent-info )
-fi  
-
 eval `/usr/libexec/path_helper -s`
-eval "$(rbenv init -)"
 eval "$(fasd --init auto)"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/myoungho.pak/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/myoungho.pak/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/myoungho.pak/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/myoungho.pak/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-# The following lines were added by compinstall
 
 zstyle ':completion:*' completer _complete _ignored _approximate
 zstyle :compinstall filename '/Users/myoungho.pak/.zshrc'
@@ -65,4 +40,5 @@ compinit
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 zstyle ':completion:*' menu select
-source /Users/myoungho.pak/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+[[ -s "$HOME/.rvm/scripts/rvm"]] && source "$HOME/.rvm/scripts/rvm"
